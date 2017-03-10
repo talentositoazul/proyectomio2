@@ -10,14 +10,14 @@
 {!!csrf_field()!!}
   <table width="253" border="1">
     <tr>
-      <td width="80">Nombre</td>
+      <td width=80">'Nombre'</td>
       <td width="157"><label>
-        <input name="nombre" type="text" id="nombre" />
+        <input  name="nombre" type="text" id="nombre" />
       </label></td>
     </tr>
     <tr>
       <td>Apellido</td>
-      <td><input name="apellido" type="text" id="apellido" /></td>
+      <td><input name="apellido"  type="text" id="apellido" /></td>
     </tr>
     <tr>
       <td>Identificacion</td>
@@ -41,7 +41,7 @@
     </tr>
     <tr>
       <td><label>
-        <input type="submit" name="Submit" value="Registrarse" />
+        <input type="submit" name="Submit" value="Actualizar" />
       </label></td>
       <td>&nbsp;</td>
     </tr>

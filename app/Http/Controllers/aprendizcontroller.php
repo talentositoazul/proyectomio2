@@ -26,33 +26,33 @@ class aprendizcontroller extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function editar()
+    public function editar($Id_aprendiz)
     {
           
-        $alumno=aprendiz::FindOrFail($Id);
-        return view ('actualizar',compact('alumno'));
+        $alumno=aprendiz::FindOrFail($Id_aprendiz);
+        return view ('actualizar_aprendiz',compact('alumno'));
     }
     
-    public function actualizar($Id)
+    public function actualizar($Id_aprendiz)
     {
-        $alumno=aprendiz::FindOrFail($Id);
+        $alumno=aprendiz::FindOrFail($Id_aprendiz);
         
         $data=request()->all();
         
         $alumno->fill($data)->save();
 
-        return redirect()->to('listar');
+        return redirect()->to('aprendiz');
     }
 
-    public function eliminar($Id)
+    public function eliminar($Id_aprendiz)
     {
-        $alumno=aprendiz::FindOrFail($Id);
+        $alumno=aprendiz::FindOrFail($Id_aprendiz);
         
         $data=request()->all();
         
-        $aprendiz->delete();
+        $alumno->delete();
 
-        return redirect()->to('listar');
+        return redirect()->to('aprendiz');
     }
 
 
@@ -62,53 +62,5 @@ class aprendizcontroller extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
-    }
+   
 }
