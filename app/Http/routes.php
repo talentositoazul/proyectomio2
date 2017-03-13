@@ -53,6 +53,18 @@ Route::post('actualizarproductos/{Id_productos}','productosController@actualizar
 Route::get('eliminarproductos/{Id_productos}','productosController@eliminar');
 //Rutas productos//
 
+
+
+//Rutas programa de formacion//
+Route::get('programa_de_formacion','programa_de_formacioncontroller@index');
+
+Route::get('editarprograma_de_formacion/{Id_programa_de_formacion}','programa_de_formacionController@editar');
+
+Route::post('actualizarprograma_de_formacion/{Id_programa_de_formacion}','programa_de_formacionController@actualizar');
+
+Route::get('eliminarprograma_de_formacion/{Id_programa_de_formacion}','programa_de_formacionController@eliminar');
+//Rutas programa de formacion//
+
 //Proyecto//
 
 

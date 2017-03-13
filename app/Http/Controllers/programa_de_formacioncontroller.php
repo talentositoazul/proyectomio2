@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\programa_de_formacion;
 
 class programa_de_formacioncontroller extends Controller
 {
@@ -16,7 +17,8 @@ class programa_de_formacioncontroller extends Controller
      */
     public function index()
     {
-        //
+        $formacion=programa_de_formacion::all();
+        return view ('listarprograma_de_formacion',compact('formacion'));
     }
 
     /**
@@ -24,10 +26,35 @@ class programa_de_formacioncontroller extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function editar($Id_programa_de_formacion)
     {
-        //
+          
+        $formacion=programa_de_formacion::FindOrFail($Id_programa_de_formacion);
+        return view ('actualizar_programa_de_formacion',compact('formacion'));
     }
+    
+    public function actualizar($Id_programa_de_formacion)
+    {
+        $formacion=programa_de_formacion::FindOrFail($Id_programa_de_formacion);
+        
+        $data=request()->all();
+        
+        $formacion->fill($data)->save();
+
+        return redirect()->to('programa_de_formacion');
+    }
+    
+      public function eliminar($Id_programa_de_formacion)
+    {
+        $formacion=programa_de_formacion::FindOrFail($Id_programa_de_formacion);
+        
+        $data=request()->all();
+        
+        $formacion->delete();
+
+        return redirect()->to('programa_de_formacion');
+    }
+
 
     /**
      * Store a newly created resource in storage.
@@ -35,53 +62,5 @@ class programa_de_formacioncontroller extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
-    }
+   
 }

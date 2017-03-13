@@ -1,7 +1,7 @@
 @extends ('layout.master')
 @section('content')
 <ul>
-@foreach($alumno as $productos)
+@foreach($producto as $productos)
 <li>
 {{$productos->Id_productos}}
 {{$productos->Referencia}}

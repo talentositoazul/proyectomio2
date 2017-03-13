@@ -17,8 +17,8 @@ class productoscontroller extends Controller
      */
     public function index()
     {
-        $alumno=productos::all();
-        return view ('listarproductos',compact('alumno'));
+        $producto=productos::all();
+        return view ('listarproductos',compact('producto'));
     }
 
     /**
@@ -29,28 +29,28 @@ class productoscontroller extends Controller
     public function editar($Id_productos)
     {
           
-        $alumno=productos::FindOrFail($Id_productos);
-        return view ('actualizar_productos',compact('alumno'));
+        $producto=productos::FindOrFail($Id_productos);
+        return view ('actualizar_productos',compact('producto'));
     }
     
     public function actualizar($Id_productos)
     {
-        $alumno=productos::FindOrFail($Id_productos);
+        $producto=productos::FindOrFail($Id_productos);
         
         $data=request()->all();
         
-        $alumno->fill($data)->save();
+        $producto->fill($data)->save();
 
         return redirect()->to('productos');
     }
     
       public function eliminar($Id_productos)
     {
-        $alumno=productos::FindOrFail($Id_productos);
+        $producto=productos::FindOrFail($Id_productos);
         
         $data=request()->all();
         
-        $alumno->delete();
+        $producto->delete();
 
         return redirect()->to('productos');
     }
