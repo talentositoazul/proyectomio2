@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\referencia;
 
 class referenciacontroller extends Controller
 {
@@ -16,7 +17,8 @@ class referenciacontroller extends Controller
      */
     public function index()
     {
-        //
+        $referencias=referencia::all();
+        return view ('listarreferencia',compact('referencias'));
     }
 
     /**
@@ -24,10 +26,35 @@ class referenciacontroller extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function editar($Id_referencia)
     {
-        //
+          
+        $referencias=referencia::FindOrFail($Id_referencia);
+        return view ('actualizar_referencia',compact('referencias'));
     }
+    
+    public function actualizar($Id_referencia)
+    {
+        $referencias=referencia::FindOrFail($Id_referencia);
+        
+        $data=request()->all();
+        
+        $referencias->fill($data)->save();
+
+        return redirect()->to('referencia');
+    }
+    
+      public function eliminar($Id_referencia)
+    {
+        $referencias=proveedor::FindOrFail($Id_referencia);
+        
+        $data=request()->all();
+        
+        $referencias->delete();
+
+        return redirect()->to('referencia');
+    }
+
 
     /**
      * Store a newly created resource in storage.
@@ -35,53 +62,5 @@ class referenciacontroller extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
-    }
+   
 }

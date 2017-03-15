@@ -6,5 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class referencia extends Model
 {
-   protected $fillable=['Descripcion'];
+	protected $table = 'referencia';
+    protected $fillable=['Descripcion'];
+     protected $primaryKey = 'Id_referencia';
 }

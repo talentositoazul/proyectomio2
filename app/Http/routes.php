@@ -65,6 +65,40 @@ Route::post('actualizarprograma_de_formacion/{Id_programa_de_formacion}','progra
 Route::get('eliminarprograma_de_formacion/{Id_programa_de_formacion}','programa_de_formacionController@eliminar');
 //Rutas programa de formacion//
 
+
+//Rutas proveedor//
+Route::get('proveedor','proveedorcontroller@index');
+
+Route::get('editarproveedor/{Id_proveedor}','proveedorController@editar');
+
+Route::post('actualizarproveedor/{Id_proveedor}','proveedorController@actualizar');
+
+Route::get('eliminarproveedor/{Id_proveedor}','proveedorController@eliminar');
+//Rutas proveedor//
+
+//Rutas proveedor//
+Route::get('proveedor','proveedorcontroller@index');
+
+Route::get('editarproveedor/{Id_proveedor}','proveedorController@editar');
+
+Route::post('actualizarproveedor/{Id_proveedor}','proveedorController@actualizar');
+
+Route::get('eliminarproveedor/{Id_proveedor}','proveedorController@eliminar');
+//Rutas proveedor//
+
+//Rutas referencia//
+Route::get('referencia','referenciacontroller@index');
+
+Route::get('editarreferencia/{Id_referencia}','referenciaController@editar');
+
+Route::post('actualizarreferencia/{Id_referencia}','referenciaController@actualizar');
+
+Route::get('eliminarreferencia/{Id_referencia}','referenciaController@eliminar');
+//Rutas referencia//
+
+
+
+
 //Proyecto//
 
 
