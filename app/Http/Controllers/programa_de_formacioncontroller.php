@@ -1,5 +1,11 @@
 <?php
 //@file(controlador de programa de formacion)//
+//@date:24/03/2017
+  /**@author:Steven Lozano
+             Cristhian Rodriguez
+             Robinson Barrera */
+  //@param Variables y funciones de los Id      
+   //@return Se devuelve al listar el programa de formacion al formato inicial.             
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;

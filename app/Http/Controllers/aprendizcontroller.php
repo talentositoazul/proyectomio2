@@ -1,9 +1,11 @@
 <?php
 /**@file(controlador de aprendiz)*/
-  //@date:
+  //@date:24/03/2017
   /**@author:Steven Lozano
              Cristhian Rodriguez
              Robinson Barrera */
+    //@param Variables y funciones de los Id      
+     //@return Se devuelve al listar los aprendices al formato inicial.           
 
 namespace App\Http\Controllers;
 

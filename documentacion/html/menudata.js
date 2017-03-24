@@ -1,9 +1,11 @@
 var menudata={children:[
-{text:"Main Page",url:"index.html"},
-{text:"Data Structures",url:"annotated.html",children:[
-{text:"Data Structures",url:"annotated.html"},
-{text:"Data Structure Index",url:"classes.html"},
-{text:"Class Hierarchy",url:"hierarchy.html"},
-{text:"Data Fields",url:"functions.html",children:[
-{text:"All",url:"functions.html"},
-{text:"Functions",url:"functions_func.html"}]}]}]}
+{text:"Página principal",url:"index.html"},
+{text:"Namespaces",url:"namespaces.html",children:[
+{text:"Lista de 'namespaces'",url:"namespaces.html"}]},
+{text:"Estructuras de Datos",url:"annotated.html",children:[
+{text:"Estructura de datos",url:"annotated.html"},
+{text:"Índice de estructura de datos",url:"classes.html"},
+{text:"Jerarquía de la clase",url:"hierarchy.html"},
+{text:"Campos de datos",url:"functions.html",children:[
+{text:"Todo",url:"functions.html"},
+{text:"Funciones",url:"functions_func.html"}]}]}]}

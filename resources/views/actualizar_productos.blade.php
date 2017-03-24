@@ -1,4 +1,19 @@
-@Extends ('layout.master')
+
+<?php
+
+
+/**@file(Esta es la vista de actualizar productos)
+  @date:24/03/2017
+  @author:Steven Lozano
+             Cristhian Rodriguez
+             Robinson Barrera 
+    @param Variables y funciones de los Id   */
+
+?>
+
+
+
+Extends ('layout.master')
 @Section('content')
 <h1> actualizar productos </h1>
 <form method='Post' action="{{url('actualizarproductos',$producto->Id_productos)}}">

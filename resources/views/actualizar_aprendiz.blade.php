@@ -1,3 +1,15 @@
+<?php
+
+
+/**@file(esta es la vista de actualizar aprendiz)
+  @date:24/03/2017
+  @author:Steven Lozano
+             Cristhian Rodriguez
+             Robinson Barrera 
+    @param Variables y funciones de los Id   */
+
+?>
+
 @Extends ('layout.master')
 @Section('content')
 <h1> actualizar aprendiz </h1>

@@ -1,3 +1,19 @@
+<?php
+
+
+/**@file(Esta es la vista de actualizar programa de formacion)
+  @date:24/03/2017
+  @author:Steven Lozano
+             Cristhian Rodriguez
+             Robinson Barrera 
+    @param Variables y funciones de los Id   */
+
+?>
+
+
+
+
+
 @Extends ('layout.master')
 @Section('content')
 <h1> actualizar programa_de_formacion </h1>

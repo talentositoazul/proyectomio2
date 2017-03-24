@@ -1,5 +1,11 @@
 <?php
-
+	/**@file(Rutas)
+  	@date:24/03/2017
+	@author:Steven Lozano
+             Cristhian Rodriguez
+             Robinson Barrera 
+   @param Variables y funciones de los Id          
+   @return Creados para volver al inicio despues de sus procesos,funciones y metodos. */		
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -13,10 +19,6 @@
 
 Route::get('/', function () {
     return view('welcome');
-});
-
-Route::get('cinema', function(){
-    return view('crear_pelicula');
 });
 
 Route::get('home', function(){
@@ -80,16 +82,6 @@ Route::post('actualizarproveedor/{Id_proveedor}','proveedorController@actualizar
 Route::get('eliminarproveedor/{Id_proveedor}','proveedorController@eliminar');
 //Rutas proveedor//
 
-//Rutas proveedor//
-Route::get('proveedor','proveedorcontroller@index');
-
-Route::get('editarproveedor/{Id_proveedor}','proveedorController@editar');
-
-Route::post('actualizarproveedor/{Id_proveedor}','proveedorController@actualizar');
-
-Route::get('eliminarproveedor/{Id_proveedor}','proveedorController@eliminar');
-//Rutas proveedor//
-
 //Rutas referencia//
 Route::get('referencia','referenciacontroller@index');
 
@@ -99,11 +91,6 @@ Route::post('actualizarreferencia/{Id_referencia}','referenciaController@actuali
 
 Route::get('eliminarreferencia/{Id_referencia}','referenciaController@eliminar');
 //Rutas referencia//
-//Proyecto//
-
-
-
-
 
 // Authentication routes...
 Route::get('auth/login', 'Auth\AuthController@getLogin');
@@ -114,7 +101,7 @@ Route::get('auth/logout', 'Auth\AuthController@getLogout');
 Route::get('auth/register', 'Auth\AuthController@getRegister');
 Route::post('auth/register', 'Auth\AuthController@postRegister');
 
-
+//Proyecto//
 
 
 

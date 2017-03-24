@@ -1,0 +1,55 @@
+[OPTIONS]
+Compatibility=1.1
+Full-text search=Yes
+Contents file=index.hhc
+Default Window=main
+Default topic=index.html
+Index file=index.hhk
+Language=0x40A Spanish(Traditional Sort)
+Title=Tienda Online
+
+[WINDOWS]
+main="Tienda Online","index.hhc","index.hhk","index.html","index.html",,,,,0x23520,,0x10387e,,,,,,,,0
+
+[FILES]
+namespace_app_1_1_http_1_1_controllers.html
+class_app_1_1_http_1_1_controllers_1_1aprendizcontroller.html
+class_app_1_1_http_1_1_controllers_1_1_controller.html
+class_app_1_1_http_1_1_controllers_1_1_peliculas_controller.html
+class_app_1_1_http_1_1_controllers_1_1productoscontroller.html
+class_app_1_1_http_1_1_controllers_1_1programa__de__formacioncontroller.html
+class_app_1_1_http_1_1_controllers_1_1proveedorcontroller.html
+class_app_1_1_http_1_1_controllers_1_1referenciacontroller.html
+dir_ee4a611c7e3276f3abf0c24c7c9003bf.html
+dir_858eb8b6c0a3b9475ec5be4d08e1dc9d.html
+dir_4061523100273968867f6c982a2364e1.html
+dir_dd2a939b2cf0a19cd3568d629efd0503.html
+dir_690cb576a7a137b13a3c790099da7d93.html
+dir_6d4ed096fb3f4baa8acf47e3b339ffc6.html
+index.html
+namespaces.html
+annotated.html
+classes.html
+hierarchy.html
+functions.html
+functions_func.html
+tab_a.png
+tab_b.png
+tab_h.png
+tab_s.png
+nav_h.png
+nav_f.png
+bc_s.png
+doxygen.png
+closed.png
+open.png
+bdwn.png
+sync_on.png
+sync_off.png
+class_app_1_1_http_1_1_controllers_1_1aprendizcontroller.png
+class_app_1_1_http_1_1_controllers_1_1_controller.png
+class_app_1_1_http_1_1_controllers_1_1_peliculas_controller.png
+class_app_1_1_http_1_1_controllers_1_1productoscontroller.png
+class_app_1_1_http_1_1_controllers_1_1programa__de__formacioncontroller.png
+class_app_1_1_http_1_1_controllers_1_1proveedorcontroller.png
+class_app_1_1_http_1_1_controllers_1_1referenciacontroller.png
