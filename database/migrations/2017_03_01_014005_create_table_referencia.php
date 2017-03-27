@@ -1,5 +1,12 @@
 <?php
-
+/**@file(Aqui encontramos los modelos de la tabla referencia)
+@date:24/03/2017
+@brief:funcion up (campos referencia)
+@author:Steven Lozano
+        Cristhian Rodriguez
+        Robinson Barrera 
+ @param variables de las tablas  y protege sus campos de registro        
+ */
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 

@@ -5,7 +5,7 @@
 %%For: 
 %Magnification: 1.00
 %%Orientation: Portrait
-%%BoundingBox: 0 0 500 47.169811
+%%BoundingBox: 0 0 500 56.603774
 %%Pages: 0
 %%BeginSetup
 %%EndSetup
@@ -19,13 +19,13 @@
 /marginwidth 10 def
 /distx 20 def
 /disty 40 def
-/boundaspect 10.600000 def  % aspect ratio of the BoundingBox (width/height)
+/boundaspect 8.833333 def  % aspect ratio of the BoundingBox (width/height)
 /boundx 500 def
 /boundy boundx boundaspect div def
 /xspacing 0 def
 /yspacing 0 def
 /rows 3 def
-/cols 6 def
+/cols 5 def
 /scalefactor 0 def
 /boxfont /Times-Roman findfont fontheight scalefont def
 
@@ -176,7 +176,6 @@ boxfont setfont
 (Controller) cw
 (BaseController) cw
 (aprendizcontroller) cw
-(PeliculasController) cw
 (productoscontroller) cw
 (programa_de_formacioncontroller) cw
 (proveedorcontroller) cw
@@ -192,25 +191,24 @@ boundx scalefactor div boundy scalefactor div scale
 
 % ----- classes -----
 
- (Controller) 2.500000 1.000000 box
- (BaseController) 2.500000 2.000000 box
+ (Controller) 2.000000 1.000000 box
+ (BaseController) 2.000000 2.000000 box
  (aprendizcontroller) 0.000000 0.000000 box
- (PeliculasController) 1.000000 0.000000 box
- (productoscontroller) 2.000000 0.000000 box
- (programa_de_formacioncontroller) 3.000000 0.000000 box
- (proveedorcontroller) 4.000000 0.000000 box
- (referenciacontroller) 5.000000 0.000000 box
+ (productoscontroller) 1.000000 0.000000 box
+ (programa_de_formacioncontroller) 2.000000 0.000000 box
+ (proveedorcontroller) 3.000000 0.000000 box
+ (referenciacontroller) 4.000000 0.000000 box
 
 % ----- relations -----
 
 solid
-0 2.500000 1.000000 out
+0 2.000000 1.000000 out
 solid
-1 2.500000 2.000000 in
+1 2.000000 2.000000 in
 solid
-1 2.500000 0.250000 out
+1 2.000000 0.250000 out
 solid
-0.000000 5.000000 1.000000 conn
+0.000000 4.000000 1.000000 conn
 solid
 0 0.000000 0.750000 in
 solid
@@ -221,5 +219,3 @@ solid
 0 3.000000 0.750000 in
 solid
 0 4.000000 0.750000 in
-solid
-0 5.000000 0.750000 in
