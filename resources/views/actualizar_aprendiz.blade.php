@@ -32,7 +32,7 @@
 </table>
 
 
-<input type ="Submit" name="actualizar Producto"> 
+<input type ="Submit" name="actualizar aprendiz"> 
 </form>
 @endsection
 
